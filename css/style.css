@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --clr-primary: hsla(339, 80%, 12%, 1);
+  --clr-secondary: hsla(34, 95%, 49%, 1);
+  --clr-box: hsla(358, 97%, 31%, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-y: hidden;
+  text-rendering: optimizeSpeed;
+  background-color: var(--clr-primary);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+a {
+  color: var(--txt-primary);
+  text-decoration: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* CSS RESET ABOVE */
+
+/* CONTAINER */
+/* .container {
+  width: 1280px;
+  margin: 0 auto;
+  height: 100vh;
+} */
+
+/* FLEXBOX */
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  align-items: end;
+  gap: 24px;
+
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 2rem;
+}
+
+.box {
+  background-color: var(--clr-box);
+  height: 78px;
+  width: 78px;
+  border-radius: 8px;
+}
+
+.flex-2 {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 2rem;
+}
+
+.box-2 {
+  background-color: var(--clr-box);
+  height: auto;
+  width: 78px;
+  border-radius: 8px;
+}
