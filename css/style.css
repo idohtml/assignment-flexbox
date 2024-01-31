@@ -22,6 +22,7 @@ body {
   overflow-y: hidden;
   text-rendering: optimizeSpeed;
   background-color: var(--clr-primary);
+  color: white;
 }
 
 html {
@@ -106,7 +107,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 
   height: 100vh;
 }
@@ -115,7 +116,7 @@ select {
 .flex {
   display: flex;
   align-items: end;
-  gap: 24px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -139,7 +140,7 @@ select {
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 24px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -162,7 +163,7 @@ select {
   display: flex;
   align-items: end;
   justify-content: end;
-  gap: 24px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -185,7 +186,7 @@ select {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -213,7 +214,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -246,7 +247,7 @@ select {
   flex-grow: 2;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 20px;
 
   background-color: var(--clr-secondary);
   border-radius: 8px;
@@ -271,3 +272,5 @@ select {
 .box-6:nth-child(2) {
   width: 250px;
 }
+
+/* SQUARES */
