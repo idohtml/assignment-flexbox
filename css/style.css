@@ -93,12 +93,13 @@ select {
 
 /* CSS RESET ABOVE */
 
-/* CONTAINER */
-/* .container {
-  width: 1280px;
-  margin: 0 auto;
-  height: 100vh;
-} */
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  place-items: center;
+}
 
 /* FLEXBOX */
 .flexbox {
@@ -110,6 +111,7 @@ select {
   height: 100vh;
 }
 
+/* First box */
 .flex {
   display: flex;
   align-items: end;
@@ -121,16 +123,18 @@ select {
   width: 470px;
   height: 160px;
 
-  padding: 2rem;
+  padding: 20px;
 }
 
 .box {
+  display: flex;
   background-color: var(--clr-box);
+  border-radius: 8px;
   height: 78px;
   width: 78px;
-  border-radius: 8px;
 }
 
+/* Second box */
 .flex-2 {
   display: flex;
   align-items: stretch;
@@ -143,12 +147,127 @@ select {
   width: 470px;
   height: 160px;
 
-  padding: 2rem;
+  padding: 20px;
 }
 
 .box-2 {
   background-color: var(--clr-box);
+  border-radius: 8px;
   height: auto;
   width: 78px;
+}
+
+/* Third box */
+.flex-3 {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 24px;
+
+  background-color: var(--clr-secondary);
   border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 20px;
+}
+
+.box-3 {
+  background-color: var(--clr-box);
+  border-radius: 8px;
+  height: 78px;
+  width: 78px;
+}
+
+/* forth box */
+.flex-4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 20px;
+}
+
+.flex-4 > .box-4:last-child {
+  /* margin-top: 40px; This is also a solution but without flexbox */
+  align-self: flex-end;
+}
+
+.box-4 {
+  background-color: var(--clr-box);
+  border-radius: 8px;
+  height: 78px;
+  width: 78px;
+}
+
+/* fifth box */
+.flex-5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 20px;
+}
+
+.box-5:first-child,
+.box-5:last-child {
+  align-self: stretch;
+}
+.box-5:nth-child(2) {
+  height: 78px;
+  width: 78px;
+}
+
+.box-5 {
+  background-color: var(--clr-box);
+  border-radius: 8px;
+  height: auto;
+  width: 78px;
+}
+
+/* Sixth box */
+.flex-6 {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  background-color: var(--clr-secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 470px;
+  height: 160px;
+
+  padding: 20px;
+}
+
+.box-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--clr-box);
+  border-radius: 8px;
+  height: 78px;
+  width: 78px;
+}
+
+.box-6:nth-child(2) {
+  width: 250px;
 }
